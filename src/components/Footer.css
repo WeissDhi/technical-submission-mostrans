@@ -1,0 +1,19 @@
+/* Import font Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.footer {
+  background-color: #b0d4f8; 
+  display: flex;
+  justify-content: center; /* Center the text */
+  align-items: center;
+  padding: 20px;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+  font-family: 'Poppins', sans-serif;
+  color: #333; /* Darker pastel color for text */
+  font-size: 18px;
+  text-align: center;
+}
+
+.footer p {
+  margin: 0;
+}

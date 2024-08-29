@@ -1,0 +1,124 @@
+/* Import Google Font Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.character-container {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.character-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+.character-detail img {
+  width: 200px;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.character-detail img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.character-detail p {
+  font-size: 1.1rem;
+  color: #555;
+  margin: 8px 0;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-top: 30px;
+}
+
+.episodes-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.episodes-list li {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Input form for assigning character to location */
+.assign-location-container {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.assign-location-container input {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 80%;
+  max-width: 400px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.assign-location-container button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.assign-location-container button:hover {
+  background-color: #0056b3;
+}
+
+.assign-location-container p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .character-detail img {
+    width: 150px;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  .character-detail p {
+    font-size: 1rem;
+  }
+
+  .episodes-list li {
+    font-size: 0.9rem;
+  }
+
+  .assign-location-container input {
+    width: 90%;
+  }
+}

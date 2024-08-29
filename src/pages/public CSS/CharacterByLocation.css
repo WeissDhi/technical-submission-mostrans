@@ -1,0 +1,113 @@
+/* Import Google Font Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.character-container {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Daftar lokasi */
+.location-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  list-style: none;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.location-list li {
+  cursor: pointer;
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 200px;
+  text-align: center;
+}
+
+.location-list li:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  color: #007bff;
+}
+
+/* Characters by Location */
+.characters-by-location {
+  margin-top: 30px;
+}
+
+.characters-by-location h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.characters-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  list-style: none;
+}
+
+.character-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 150px;
+  padding: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.character-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Gambar karakter */
+.character-image {
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid #e0e0e0;
+  transition: all 0.3s ease;
+}
+
+.character-name {
+  font-size: 1.1rem;
+  color: #333;
+  margin-top: 10px;
+}
+
+/* Hover effect pada gambar */
+.character-card:hover .character-image {
+  border-color: #ffcccb; /* Pastel pink */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .location-list li {
+    width: 150px;
+  }
+
+  .character-card {
+    width: 130px;
+    padding: 10px;
+  }
+
+  h2, h3 {
+    font-size: 1.5rem;
+  }
+}
